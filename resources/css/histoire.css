@@ -1,0 +1,154 @@
+#cover-image{
+    width: 70%;
+}
+
+#publier-histoire{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#publier-histoire > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#publier-histoire input, #publier-histoire textarea, #publier-histoire select{
+    border: 2px solid var(--midnight-green);
+    padding: 1rem;
+    width: 15rem;
+}
+
+#publier-histoire textarea{
+    padding: 1rem;
+}
+
+#publier-histoire select{
+    text-transform: uppercase;
+}
+
+#titre-histoire{
+    margin-top: 5rem;
+}
+
+#details-histoire{
+    padding-block: 5rem;
+}
+
+#nav-histoire{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.commentaire{
+    position: relative;
+    display: flex;
+    min-width: 50rem;
+    background-color: #b5b5b55d;
+    justify-content: space-between;
+}
+
+.commentaire #left{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: var(--midnight-green);
+}
+
+.commentaire #left *{
+    color: white;
+}
+
+.commentaire #right{
+    text-align: right;
+    padding: 1rem;
+}
+
+.commentaire #right span{
+    font-weight: 600;
+    font-style: italic;
+}
+
+.commentaire *{
+    color: var(--midnight-green);
+}
+
+.commentaire img{
+    aspect-ratio: 1/1;
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+}
+
+#commentaires{
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#commentaires form{
+    margin-bottom: 3rem;
+}
+
+#edit-commentaire{
+    padding: 1rem;
+    height: 3.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#edit-commentaire *{
+    color: white;
+}
+
+#liste-commentaires{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+form input {
+    width: 10rem;
+}
+
+form button {
+    width: 12rem;
+}
+
+#source, #destination {
+    cursor: pointer;
+    padding: 0.5rem;
+    width: fit-content;
+    color: white;
+    border: 2px solid transparent;
+    background-color: var(--dark-slate-gray);;
+}
+
+#source option, #destination option {
+    color: white; 
+}
+
+.infos-histoire{
+    background-color: #b5b5b55d;
+    padding: 3rem;
+    border: 2px var(--midnight-green);
+    width: 1100px;
+}
+
+#milieu{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}

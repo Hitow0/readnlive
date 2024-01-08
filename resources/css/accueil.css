@@ -1,0 +1,113 @@
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+    width: 100%;
+}
+
+.home-title{
+    font-size: 5rem;
+    line-height: 90px;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-title span{
+    font-family: 'Kalnia', serif;
+    font-weight: 800;
+}
+
+#accueil-histoires{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 3rem;
+    width: 100%;
+}
+
+.histoire-card{
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    color: white;
+    background: linear-gradient(90deg, var(--midnight-green), var(--dark-slate-gray));
+    width: 70%;
+    gap: 2rem;
+}
+
+.histoire-card h2{
+    color: white;
+}
+
+.histoire-card p{
+    color: white;
+}
+
+.histoire-card #left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    flex-basis: 60%;
+}
+
+.histoire-card #right{
+    text-align: right;
+    flex-basis: 40%;
+}
+
+.histoire-card #right img{
+    width: 20rem;
+    height: 15rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#home{
+    display: flex;
+    gap: 2rem;
+}
+
+#home > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home > div img{
+    height: 25rem;
+}
+
+#select-genre > *{
+    cursor: pointer;
+    padding: 1rem;
+}
+
+#select-genre{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+#select-genre select{
+    border: 2px solid var(--midnight-green);
+    color: var(--midnight-green);
+    outline: transparent;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#select-genre input{
+    border-color: transparent;
+    outline: transparent;
+    color: white;
+    background-color: var(--midnight-green);
+}
+
+#filter{
+    padding-top: 10rem;
+}

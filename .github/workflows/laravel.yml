@@ -33,6 +33,8 @@ jobs:
       run: |
         cp -r resources/images storage/app/public
         php artisan storage:link
+    - name : NPM dependencies
+      run: npm install
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: sqlite

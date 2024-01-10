@@ -26,8 +26,13 @@ jobs:
       run: chmod -R 777 storage bootstrap/cache
     - name: Create Database
       run: |
-        mkdir -p database
         touch database/database.sqlite
+        php artisan migrate
+        php artisan db:seed
+    - name: Images
+      run: |
+        cp -r resources/images storage/app/public
+        php artisan storage:link
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: sqlite
